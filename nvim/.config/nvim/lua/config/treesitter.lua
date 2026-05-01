@@ -1,11 +1,9 @@
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "ruby" },  -- Ensure Ruby parser is installed
+require('nvim-treesitter.config').setup {
+  ensure_installed = { "ruby" },
   highlight = {
-    enable = true,               -- Enable syntax highlighting
+    enable = true,
   },
   indent = {
-    enable = true,               -- Enable better indentation
+    enable = true,
   },
 }
--- Define custom highlight for class and module names
-vim.cmd("colorscheme onedark")
