@@ -22,10 +22,6 @@ setopt PROMPT_SUBST
 
 PROMPT='%F{#00ff87}[%m]%n%f:%F{#5f87ff}${PWD/#$HOME/~}%f %F{#ffdf01}${vcs_info_msg_0_}%f %# '
 
-if command -v tmux > /dev/null && [ -z "$TMUX" ]; then
-    tmux attach || tmux new
-fi
-
 alias l="ls -latr"
 alias python3="python"
 alias gs="git status"
